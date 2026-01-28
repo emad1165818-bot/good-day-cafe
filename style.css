@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.container{
+    width: 1200px;
+margin: auto;
+background-color: rgb(180, 142, 95);
+border-radius: 10px;
+    
+    
+    
+}
+body{
+    background-color: rgb(180, 142, 95);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#home .heading .det{
+    text-align: center;
+    
+    
+}
+#home .heading .det h2{
+    font-size: 20px;
+    font-weight: bold;
+}
+#home .heading .det h3{
+    font-size: 18px;
+    font-weight: 500;
+margin-top: 8px;
+margin-bottom: 2rem;
+}
+
+#home img{
+    width: 120px;
+    /* height: 100px; */
+    /* border-radius: 100%; */
+    object-fit: cover;
+    /* border: 3px solid #fff; */
+    display: block;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 5px;
+    
+    
+}
+/* menu start */
+
+
+.links-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* المسافة بين الأزرار */
+}
+#home .links-wrapper i{
+    margin-right: 10px;
+}
+
+.link-btn {
+
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-radius: 100px; /* جعل الحواف دائرية تماماً كالصورة */
+    border: 1px solid rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    text-align: center;
+    width: 100vh;
+    margin: auto;
+    margin-top: 5px;
+    box-shadow: 0 4px 15px rgb(0, 0, 0, 1.5);
+    
+}
+
+.link-btn:hover {
+    background-color: #fff;
+    transform: scale(1.02);
+}
+/* icon */
+
+
+/* الألوان والتدرجات */
+.link-btn {
+    background: linear-gradient(to bottom, z#ced7df 0%, #00f2fe 100%);
+    color: #020d1a;
+}
+
+
+
+
+/* menu end  */
+
+/* media */
+
+@media (max-width: 480px) {
+    .container{
+        width: 95%;
+    }
+    .link-btn{
+        padding: 10px;
+        margin: auto;
+        width: 90%;
+    }
+
+}
+@media (max-width: 1200px) {
+    .container{
+        width: 90%;
+    }
+    .link-btn{
+        padding: 20px;
+        margin: 0 auto;
+        width: 90%;
+    }
+}
